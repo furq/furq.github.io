@@ -1,0 +1,34 @@
+User enters URL in browser
+        |
+        v
+Browser sends request to DNS resolver
+        |
+        v
+DNS resolver checks cache
+        |
+        v
+If cache hit, return IP address to browser and exit
+        |
+        v
+If cache miss, query root DNS servers for TLD server
+        |
+        v
+Root DNS servers respond with TLD server IP address
+        |
+        v
+DNS resolver queries TLD server for authoritative server
+        |
+        v
+TLD server responds with authoritative server IP address
+        |
+        v
+DNS resolver queries authoritative server for IP address
+        |
+        v
+Authoritative server responds with IP address
+        |
+        v
+DNS resolver caches IP address and returns it to browser
+        |
+        v
+Browser connects to web server using IP address
